@@ -61,12 +61,10 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
             let vc = segue.destination as! ViewController
             if let indexPath = tableView.indexPathForSelectedRow{
                 selectedRow = indexPath.row
-                print(selectedRow)
             }
             let theText = animals[selectedRow]
             print(theText);
-            vc.passedText = theText
-            //Data has to be a variable name in your RandomViewController
+            vc.passedText = theText //Data has to be a variable name in your ViewController
         }
     }
 }

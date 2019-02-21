@@ -17,8 +17,6 @@ class ViewController: UIViewController {
 
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print(passedText);
-        print("passedText");
         sampleLabel.text = passedText
     }
 
