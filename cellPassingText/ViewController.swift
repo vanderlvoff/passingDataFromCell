@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var passedText: String = "";
+    @IBOutlet weak var sampleLabel: UILabel!
+    
     override func viewDidLoad() {
+
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print(passedText);
+        print("passedText");
+        sampleLabel.text = passedText
     }
 
 
